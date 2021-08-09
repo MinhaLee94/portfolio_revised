@@ -17,6 +17,7 @@
         <img src="images/logo.png">
       </div>
       <ul class="nav__link">
+        <li class="nav__link__item" data-link="#about"> About </li>
         <li class="nav__link__item" data-link="#works"> Works </li>
         <li class="nav__link__item" data-link="#testimonials"> Testimonials </li>
         <li class="nav__link__item" data-link="#contact"> Contact </li>
@@ -27,7 +28,7 @@
       <section class="main__text">
         <div class="main__text-name">Minha Lee</div>
         <div class="main__text-position">Front-end Developer</div>
-        <div class="main__text-contact">Get In Touch</div>
+        <a class="main__text-contact" href="mailto:shjune1994@gmail.com">Get In Touch</a>
       </section>
     </main>
     <img id="shape1" src="images/shape1.png">
@@ -47,9 +48,31 @@
       <a href="https://www.linkedin.com/in/minhalee94/" target="_blank">
         <i class="fab fa-linkedin-in"></i>
       </a>
+      <a href="https://www.instagram.com/peaceful_summer_/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
   </div>
+  <div id="about">
+    <div class="about__decription">
+      <div class="about__title"> About Me. </div>
+      <p class="about__paragraph">Hello! My name is Minha and I love creating things, espacially on the internet. 
+        Every technologies and services in daily life inspires me and I like to think about the 
+        <span>design</span> of those products and <span>imagine</span> the further features.<br /><br />
+        My main focus these days is to build <span>reusable</span> and <span>user-friendly products</span>. 
+        Life is a marathon, and so my life goal is to get better everyday and become a real <span>expert</span>.</p>
+      <div class="about__icons">
+        <i class="fab fa-react"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-python"></i>
+        <i class="fab fa-node-js"></i>
+      </div>
+    </div>
+    <img class="about__picture" src="images/pic.png">
+  </div>
   <div id="works">
+    <div class="divider"></div>
     <div class="section__title"> Lastest Works </div>
     <ul class="works">
       <li class="work">
@@ -60,7 +83,7 @@
           <div class="work__title">YouTube Clone</div>
           <div class="work__language">Built using NodeJS, Express, Mongo and ES6+</div>
           <div class="work__icons">
-            <a class="work__icon" href="https://github.com/MinhaLee94/youtube_clone_revised" target="_blank">
+            <a href="https://github.com/MinhaLee94/youtube_clone_revised" target="_blank">
               <i class="fab fa-github-square"></i>
             </a>
             <a href="https://youtube-clone-revised.herokuapp.com/" target="_blank">
@@ -76,20 +99,34 @@
         <a class="work__link" href="https://youtube-clone-revised.herokuapp.com/" style="background-image: url(images/youtube-clone.png)" target="_blank"></a>
       </li>
     </ul>
+    <div class="divider"></div>
   </div>
   <div id="testimonials">
-    <div class="section__title">
-      <h1>Testimonials</h1>
-    </div>
-    <div class="testimonials">
-      <div class="testimonial">
-          <img src="images/compressed_logo.png" class="testimonial__avatar">
-          <div class="testimonial__speech-bubble">
-              <p>이 녀석을 추천합니다</p>
-              <p class="name"><a href="url">address</a> / Ginius</p>
-          </div>
-      </div>
+    <div class="section__title">Testimonials</div>
+    <div class="testimonial">
+        <img src="images/ramman_kannan.jpg" class="testimonial__avatar">
+        <div class="testimonial__speech-bubble">
+            <p>Minha Lee is a model student and all the students and I benefited significantly due to Minha’s
+              presence and engagement. He is a doer, leading by example. He shows empathy with superb
+              communication skills and builds team effortlessly.</p>
+            <p class="name"><a href="https://www.linkedin.com/in/coachrk/" target="_blank">Raman Kannan</a> / Hunter College</p>
+        </div>
     </div>
   </div>
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 </body>
+<footer id="contact">
+  <div class="contact__title">Contact</div>
+  <a class="contact__btn" href="mailto:shjune1994@gmail.com">Say hello</a>
+  <div class="contact__links">
+    <a href="https://www.linkedin.com/in/minhalee94/" target="_blank">Linkedin</a>
+    <a href="https://github.com/MinhaLee94" target="_blank">Github</a>
+    <a href="https://www.instagram.com/peaceful_summer_/" target="_blank">Instagram</a>
+  </div>
+  <div class="contact__rights">
+    © 2021 Minha Lee - All right reserved
+  </div>
+</footer>
 </html>
