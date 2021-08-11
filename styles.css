@@ -86,14 +86,26 @@ nav {
 }
 
 .nav__link li:last-child {
-  padding: 10px 12px;
-  border: 1px solid #ff4500;
-  border-radius: 4px;
   margin-bottom: 8px;
 }
 
-.nav__link li:last-child:hover {
+.resume {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 85px;
+  height: 36px;
+  border: 1px solid #ff4500;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 8px;
+  transition: all 0.25s ease-in-out;
+}
+
+.resume:hover {
   background-color: #fd510d;
+  color: white;
 }
 
 .first__main {
