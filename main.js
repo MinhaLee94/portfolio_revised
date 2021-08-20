@@ -11,6 +11,14 @@ window.onload=function(){
         return;
     }
     scrollIntoView(link);
+    navbarMenu.classList.toggle('menu-on');
+    if (toggleIcon.classList.contains('fa-bars')){
+      toggleIcon.classList.remove("fa-bars")
+      toggleIcon.classList.add("fa-times")
+    } else {
+      toggleIcon.classList.add("fa-bars")
+      toggleIcon.classList.remove("fa-times")
+    }
   });
 
   document.addEventListener('scroll', () => {
@@ -36,6 +44,19 @@ window.onload=function(){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth' });
   }
+
+  const toggleBtn = document.querySelector('.navbar__toggle-btn');
+  const toggleIcon = toggleBtn.querySelector('i');
+  toggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('menu-on');
+    if (toggleIcon.classList.contains('fa-bars')){
+      toggleIcon.classList.remove("fa-bars")
+      toggleIcon.classList.add("fa-times")
+    } else {
+      toggleIcon.classList.add("fa-bars")
+      toggleIcon.classList.remove("fa-times")
+    }
+  });
 }
 
 
